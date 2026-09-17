@@ -1,102 +1,77 @@
-\# Image Enhancement and Edge Detection System
+# Image Enhancement and Edge Detection System
 
+A Computer Vision project developed using Python and OpenCV for performing image processing operations such as grayscale conversion, Gaussian blurring, edge detection, image enhancement, and image segmentation.
 
+## Project Overview
 
-\## 1. Project Description
+This project demonstrates fundamental image processing techniques using OpenCV.
 
+The system provides a menu-driven interface where the user can select different image processing operations or run all operations together.
 
+## Features
 
-This is a simple Computer Vision project developed using Python and OpenCV.
+- Convert an image to Grayscale
+- Apply Gaussian Blur
+- Detect edges using Canny Edge Detection
+- Enhance image using Histogram Equalization
+- Segment image using Thresholding
+- Run all image processing operations automatically
+- Save processed images in an output folder
 
+## Technologies Used
 
+- Python
+- OpenCV
+- NumPy
+- Git
+- GitHub
 
-The project takes an input image and performs different image processing operations such as grayscale conversion, Gaussian blurring, Canny edge detection, histogram equalization, and image segmentation using Otsu thresholding.
+## Image Processing Operations
 
+### 1. Grayscale Conversion
 
+Converts the input color image into a grayscale image.
 
-The project runs completely through the command line and does not require a GPU.
+This reduces the image from three color channels (BGR) to a single intensity channel.
 
+### 2. Gaussian Blur
 
+Gaussian Blur is used to reduce image noise and smooth the image.
 
-\## 2. Features
+It is particularly useful as a preprocessing step before edge detection.
 
+### 3. Canny Edge Detection
 
+Canny Edge Detection identifies important boundaries and edges within an image.
 
-The system provides the following operations:
+It can be used to detect objects and structural features.
 
+### 4. Histogram Equalization
 
+Histogram Equalization improves the contrast of an image by redistributing pixel intensity values.
 
-1\. Convert image to grayscale
+This can make details more visible in images with poor contrast.
 
-2\. Apply Gaussian blur
+### 5. Image Segmentation
 
-3\. Detect edges using Canny edge detection
+Thresholding separates regions of an image based on pixel intensity.
 
-4\. Enhance image using histogram equalization
+The resulting binary image can help distinguish objects from the background.
 
-5\. Segment the image using Otsu thresholding
-
-6\. Run all operations together
-
-
-
-\## 3. Technologies Used
-
-
-
-\- Python
-
-\- OpenCV
-
-\- Command Prompt / PowerShell
-
-
-
-\## 4. Requirements
-
-
-
-\- Python 3.x
-
-\- OpenCV
-
-
-
-The required Python package is listed in `requirements.txt`.
-
-
-
-\## 5. Project Structure
-
-
+## Project Structure
 
 ```text
-
-OCR\_Project/
-
+Image-Processing-System/
 │
-
 ├── main.py
-
 ├── input.jpg
-
 ├── requirements.txt
-
-├── .gitignore
-
 ├── README.md
-
+├── .gitignore
 │
-
 └── output/
-
-&#x20;   ├── grayscale.jpg
-
-&#x20;   ├── blurred.jpg
-
-&#x20;   ├── edges.jpg
-
-&#x20;   ├── enhanced.jpg
-
-&#x20;   └── threshold.jpg
-
+    ├── grayscale.jpg
+    ├── blurred.jpg
+    ├── edges.jpg
+    ├── enhanced.jpg
+    └── threshold.jpg
