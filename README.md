@@ -95,6 +95,7 @@ Image-Processing-System/
 ├── README.md
 ├── statement.md
 └── .gitignore 
+```
 ## Installation
 
 ### 1. Clone the Repository
