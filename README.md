@@ -95,12 +95,3 @@ Image-Processing-System/
 ├── README.md
 ├── statement.md
 └── .gitignore 
-```
-## Installation
-
-### 1. Clone the Repository
-
-Download the project from GitHub using:
-
-```bash
-git clone https://github.com/aayushi24bai10365-hub/Image-Processing-System.git
