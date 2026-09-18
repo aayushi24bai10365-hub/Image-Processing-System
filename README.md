@@ -1,28 +1,25 @@
 # Image Enhancement and Edge Detection System
 
-A Computer Vision project developed using Python and OpenCV for performing image processing operations such as grayscale conversion, Gaussian blurring, edge detection, image enhancement, and image segmentation.
+## Overview
 
-## Project Overview
+The Image Enhancement and Edge Detection System is a Python-based Computer Vision project developed using OpenCV.
 
-This project demonstrates fundamental image processing techniques using OpenCV.
-
-The system provides a menu-driven interface where the user can select different image processing operations or run all operations together.
+The project allows users to apply different image processing techniques to an input image through a simple menu-driven interface. The processed images are automatically saved in the output folder.
 
 ## Features
 
-- Convert an image to Grayscale
-- Apply Gaussian Blur
-- Detect edges using Canny Edge Detection
-- Enhance image using Histogram Equalization
-- Segment image using Thresholding
-- Run all image processing operations automatically
-- Save processed images in an output folder
+- Grayscale Conversion
+- Gaussian Blur
+- Canny Edge Detection
+- Histogram Equalization
+- Otsu Image Segmentation
+- Run All Operations
 
 ## Technologies Used
 
 - Python
 - OpenCV
-- NumPy
+- Visual Studio Code
 - Git
 - GitHub
 
@@ -30,48 +27,79 @@ The system provides a menu-driven interface where the user can select different 
 
 ### 1. Grayscale Conversion
 
-Converts the input color image into a grayscale image.
+Converts the input colour image into a grayscale image.
 
-This reduces the image from three color channels (BGR) to a single intensity channel.
+Output file:
+
+`output/grayscale.jpg`
 
 ### 2. Gaussian Blur
 
-Gaussian Blur is used to reduce image noise and smooth the image.
+Applies Gaussian Blur using a 5 × 5 kernel to smooth the image and reduce noise.
 
-It is particularly useful as a preprocessing step before edge detection.
+Output file:
+
+`output/blurred.jpg`
 
 ### 3. Canny Edge Detection
 
-Canny Edge Detection identifies important boundaries and edges within an image.
+Detects important edges in the image using the Canny Edge Detection algorithm.
 
-It can be used to detect objects and structural features.
+Output file:
+
+`output/edges.jpg`
 
 ### 4. Histogram Equalization
 
-Histogram Equalization improves the contrast of an image by redistributing pixel intensity values.
+Improves image contrast by redistributing the intensity values of the image.
 
-This can make details more visible in images with poor contrast.
+Output file:
 
-### 5. Image Segmentation
+`output/enhanced.jpg`
 
-Thresholding separates regions of an image based on pixel intensity.
+### 5. Otsu Image Segmentation
 
-The resulting binary image can help distinguish objects from the background.
+Uses Otsu Thresholding to automatically determine a suitable threshold and create a binary image.
+
+Output file:
+
+`output/threshold.jpg`
+
+### 6. Run All Operations
+
+Runs all five image processing operations together and generates all output images.
 
 ## Project Structure
 
 ```text
 Image-Processing-System/
 │
-├── main.py
+├── modules/
+│   ├── grayscale.py
+│   ├── blur.py
+│   ├── edge_detection.py
+│   ├── enhancement.py
+│   ├── segmentation.py
+│   └── utils.py
+│
+├── output/
+│   ├── grayscale.jpg
+│   ├── blurred.jpg
+│   ├── edges.jpg
+│   ├── enhanced.jpg
+│   └── threshold.jpg
+│
 ├── input.jpg
+├── main.py
 ├── requirements.txt
 ├── README.md
-├── .gitignore
-│
-└── output/
-    ├── grayscale.jpg
-    ├── blurred.jpg
-    ├── edges.jpg
-    ├── enhanced.jpg
-    └── threshold.jpg
+├── statement.md
+└── .gitignore 
+## Installation
+
+### 1. Clone the Repository
+
+Download the project from GitHub using:
+
+```bash
+git clone https://github.com/aayushi24bai10365-hub/Image-Processing-System.git
